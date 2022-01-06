@@ -1,0 +1,34 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.1",
+    "browser-sync": "^2.27.7",
+    "ejs": "^3.1.6",
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.5",
+    "postcss-cli": "^9.1.0"
+  },
+  "scripts": {
+
+    "watch-css": "nodemon --legacy-watch --watch src/scss -e scss --ignore public/ -x \"npm run css\"",
+    "css": "npm-run-all css-compile css-prefix",
+    "css-compile": "node-sass src/scss/app.scss public/css/app.css",
+    "css-prefix": "postcss --use autoprefixer -r public/css/app.css",
+
+    "watch-ejs": "nodemon --legacy-watch --watch src/ -e ejs --ignore public/ -x \"npm run ejs-load\"",
+    "ejs-load": "ejs src/index.ejs -o public/index.html",
+    
+    "sync": "browser-sync start -s 'public' -f 'public' ",
+    "dev": "run-p watch-css watch-ejs sync"
+  },
+  "author": "Mostafizur Rahman",
+  "license": "ISC"
+}
