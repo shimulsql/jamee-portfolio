@@ -1,2 +1,37 @@
-</body>
+    <footer class="footer-wrap bg-white" id="footer">
+        <div class="container">
+            <h3 class="footer-title"> Let's connect and grab a coffee </h3>
+            <h6 class="footer-subtitle">
+                Drop me a line for work inquiries or just say hello
+            </h6>
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <div class="widget">
+                        <h4 class="text-danger wc-text">
+                            tijamee@gmail.com
+                        </h4>
+                        <h4 class=" mt-3 wc-text">
+                            (+880) 1751566301 
+                        </h4>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="widget">
+                        <ui class="footer-social">
+                            <% socials.forEach(function(item){%>
+                                <li>
+                                    <a class="<%= item.typeclass %>" href="<%= item.link %>"> <i class="<%= item.icon %>"></i> </a>
+                                </li>    
+                            <%}) %>
+                        </ui>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2022 with <span class="text-danger">❤</span> Made in Bangladesh
+            </div>
+        </div>
+    </footer>
+    <script src="./js/app.js"></script>
+    </body>
 </html>

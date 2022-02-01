@@ -1,0 +1,82 @@
+{
+    "fcards": [
+        {
+            "image": "images/furniture.jpg",
+            "title": "Furniture Design and Branding",
+            "label": "Coming Soon",
+            "tags": "Product, Print Design",
+            "category": "E-commerce"
+        },
+        {
+            "image": "images/taqny.jpg",
+            "title": "Taqny Design and Branding",
+            "label": "Coming Soon",
+            "tags": "Product, Print Design",
+            "category": "E-commerce"
+        },
+        {
+            "image": "images/hireble.jpg",
+            "title": "Hireble Design and Branding",
+            "label": "Coming Soon",
+            "tags": "Product, Print Design",
+            "category": "E-commerce"
+        },
+        {
+            "image": "images/art-vision.jpg",
+            "title": "Art Vision Design and Branding",
+            "label": "Coming Soon",
+            "tags": "Product, Print Design",
+            "category": "E-commerce"
+        },
+        {
+            "image": "images/pencil.jpg",
+            "title": "Pencil Design and Branding",
+            "label": "Coming Soon",
+            "tags": "Product, Print Design",
+            "category": "E-commerce"
+        }
+    ],
+    "services": [
+        {
+            "title": "Brand <br>Identity",
+            "subtitle": "Developing strategic brand identities that resonates with audience and books a distinguished position through visuals, unique color palette, and custom illustrations."
+        },
+        {
+            "title": "Motion <br>Graphics",
+            "subtitle": "Developing strategic brand identities that resonates with audience and books a distinguished position through visuals, unique color palette, and custom illustrations.",
+            "stamp": "Soon!"
+        }
+    ],
+    "socials": [
+        {
+            "icon": "fab fa-behance",
+            "link": "#",
+            "typeclass": "behance"
+        },
+        {
+            "icon": "fab fa-dribbble",
+            "link": "#",
+            "typeclass": "dribbble"
+        },
+        {
+            "icon": "fab fa-linkedin",
+            "link": "#",
+            "typeclass": "linkedin"
+        },
+        {
+            "icon": "fab fa-facebook-f",
+            "link": "#",
+            "typeclass": "facebook"
+        },
+        {
+            "icon": "fab fa-instagram",
+            "link": "#",
+            "typeclass": "instagram"
+        },
+        {
+            "icon": "fab fa-twitter",
+            "link": "#",
+            "typeclass": "twitter"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+@import "footer";
+
+.section{
+    padding: 80px 0 0 0;
+
+    .section-title{
+        margin-bottom: 20px;
+        font-weight: 400;
+        font-size: 2rem;
+        color: #313131;
+    }
+
+    .section-subtitle{
+        font-weight: 400;
+        opacity: 60%;
+    }
+
+    // section bg
+    &.sbg-white{
+        background-color: $white;
+    }
+}

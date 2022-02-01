@@ -1,0 +1,148 @@
+.banner{
+    margin-top: 35px;
+
+    &__top-small{
+        text-transform: uppercase;
+        color: #7B8288;
+        font-size: 14px;
+        margin-bottom: 0;
+        // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        span{
+            color: #4B73FF;
+            font-weight: 500;
+        }
+    }
+    &__title{
+        font-size: 73px;
+        font-weight: 500;
+        background: linear-gradient(to right,#7000FF, #FF4646);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        width: fit-content;
+        margin-bottom: 0;
+
+    }
+    &__subtitle{
+        font-size: 18px;
+        max-width: 530px;
+        color: #7B8288;
+        margin-top: 1.7rem;
+
+        span{
+            color: #4B73FF;
+
+        }
+    }
+}
+
+.featured-works{
+    .card{
+        width: 350px;
+        max-width: 350px;
+        margin-bottom: 1.6rem;
+        border-radius: 15px;
+        overflow: hidden;
+        border: none;
+
+        .card-img-top{
+            height: 290px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .card-body{
+            position: relative;
+
+            .label{
+                position: absolute;
+                top: 0;
+                left: 1.5rem;
+                transform: translateY(-50%);
+                font-size: 12px;
+                background-color: #fff;
+                border-radius: $border-radius-pill;
+                padding: .2rem .6rem;
+                color: #313131;
+            }
+
+            .card-title{
+                font-weight: 400;
+                font-size: 20px;
+                color: #313131;
+            }
+
+            .card-tags{
+                font-weight: 300;
+                color: #7B8288;
+                font-size: 16px;
+            }
+            
+            .card-category{
+                margin-top: 1rem;
+                font-size: 14px;
+                color: #7B8288;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.services-wrap{
+
+    .card-col{
+        &:nth-child(1){
+            .card{
+                &::before{
+                    background-color: $danger;
+                }
+            }
+        }
+    }
+
+    .card{
+        border: none;
+        border-radius: 16px;
+        position: relative;
+
+        &::before{
+            position: absolute;
+            content: '';
+            width: 2px;
+            background-color: rgb(136, 136, 136);
+            left: 0;
+            top: 10%;
+            height: 84%;
+
+
+        }
+
+        .card-body{
+            padding: 1.5rem 1rem;
+        }
+        
+        .card-title{
+            font-size: 1.45rem;
+            font-weight: 400;
+            color: #313131;
+            position: relative;
+            width: fit-content;
+
+            .stamp{
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translate(120%, -50%);
+                background-color: $danger;
+                font-size: .8rem;
+                padding: .3rem .5rem;
+                border-radius: $border-radius-pill;
+                color: #fff;
+            }
+        }
+        .card-subtitle{
+            color: #7B8288;
+            font-size: 12px;
+            margin-top: 1rem;
+        }
+    }
+}

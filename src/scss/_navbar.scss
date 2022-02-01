@@ -1,0 +1,13 @@
+.navbar-nav{
+    .nav-item{
+        &:last-child{
+            .nav-link{
+                padding-right: 0;
+            }
+        }
+
+        .nav-link{
+            font-size: 14px;
+        }
+    }
+}

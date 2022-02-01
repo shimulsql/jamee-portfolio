@@ -1,6 +1,29 @@
 @import "override";
+@import "variable";
 @import "node_modules/bootstrap/scss/bootstrap";
 
+@import "mixins/typo";
+
+@import "page/home";
+
+@import "navbar";
+@import "section/section";
+
+
 body{
-    background-color: $primary; 
+    background-color: $body-background;
+}
+
+.narrow{
+    margin: 0 auto;
+
+    @include media-breakpoint-up(md){
+        width: calc(100% - 350px);
+    }
+    @include media-breakpoint-up(lg){
+        width: calc(100% - 500px);
+    }
+    @include media-breakpoint-up(xxl){
+        width: calc(100% - 880px);
+    }
 }

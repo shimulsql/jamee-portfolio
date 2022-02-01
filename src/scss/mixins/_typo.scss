@@ -1,0 +1,8 @@
+@mixin font($name, $weight: 400){
+    @each $key, $value in $fonts {
+        @if ($name == $key){
+            font-family: $value;
+        }
+    }
+    font-weight: $weight;
+}

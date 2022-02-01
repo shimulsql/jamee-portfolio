@@ -1,0 +1,41 @@
+/**
+    Colors
+*/
+
+$body-background: #f7f7f7;
+$primary: rgb(9, 182, 124);
+$danger: #FF5353;
+
+/**
+    Navbar
+*/
+$navbar-padding-y: 27px;
+$navbar-nav-link-padding-x: 60px * .5;
+
+$navbar-light-toggler-border-color: transparent;
+$navbar-toggler-focus-width: 0;
+
+/**
+    Fonts
+*/
+
+$font-rubik: 'Rubik', sans-serif;
+
+$fonts: ("rubik": $font-rubik);
+
+// base font
+$font-family-base: $font-rubik;
+
+
+/**
+    Default settings
+*/
+
+// container widths
+$container-max-widths: (
+  sm: 540px,
+  md: 650px,
+  lg: 700px,
+  xl: 740px,
+  xxl: 1040px
+);

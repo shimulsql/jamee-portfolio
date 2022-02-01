@@ -1,21 +1,82 @@
 <%# Include footer %>
-<%- include('src/includes/header', {title: 'Home toru'}) %>
+<%- include('includes/header', {title: 'Al Jamee Portfolio' }) %>
 
-<%# Your Content start %>
+    <%# Your Content start %>
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-6 bg-blue">
-            gfg
+    <!-- Banner section start -->
+    <section class="banner">
+        <div class="container">
+            <p class="banner__top-small">
+                This is a Website <span>I made it for you</span>
+            </p>
+            <h1 class="banner__title">
+                Hi I'm Al Jamee
+            </h1>
+            <p class="banner__subtitle">
+                Graphic designer with 13 years of experience Branding and Print design efforts to create delightful & impactful Designs.
+            </p>
+            <p class="banner__subtitle">
+                Currently, I'm a Senior Designer at <span>Glogo Instries Ltd.</span>
+                a sister concern of Hamko Group. Brand, Print and Social Media Designing. 
+            </p>
         </div>
-        <div class="col-md-6 bg-red">
-            fgfg
-        </div>
-    </div>
-</div>
+    </section>
+    <!-- Banner section end -->
 
-<%# Your Content end %>
+    <!-- Featured Work Section start -->
+    <section class="section featured-works" id="work">
+        <div class="container">
+            <div class="row">
+                <% fcards.forEach(function(card){ %> 
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="<%= card.image %>" class="card-img-top" alt="<%= card.title %>">
+                            <div class="card-body">
+                                <span class="label"><%= card.label %></span>
+                                <h5 class="card-title"><%= card.title %></h5>
+                                <p class="card-tags"><%= card.tags %>
+                                <a href="#" class="d-block card-category"><%= card.category %></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div> <!--.col-->  
+                <% }); %>
+            </div>
+        </div>
+    </section>
+    <!-- Featured Work Section end -->
+
+    <!-- Services Start  -->
+    <section class="section services-wrap">
+        <div class="container">
+            <h3 class="section-title">
+                Services
+            </h3>
+            <div class="row">
+                <% services.forEach(function(service){ %>
+                    <div class="col-md-6 card-col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">
+                                    <%- service.title %>
+                                    <% if(service.stamp){ %>
+                                        <span class="stamp"><%= service.stamp %></span>
+                                    <% } %>
+                                </h3>
+                                <p class="card-subtitle">
+                                    <%= service.subtitle %>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                <% }) %>
+            </div>
+        </div>
+    </section>
+    <!-- Services End  -->
+
+
+    <%# Your Content end %>
 
 <%# Include footer %>
-<%- include('src/includes/footer') %>
-    
+<%- include('includes/footer') %>

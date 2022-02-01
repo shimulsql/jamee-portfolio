@@ -1,0 +1,73 @@
+footer{
+    margin-top: 80px;
+    padding: 80px 0;
+
+    .footer-title{
+        margin-bottom: 20px;
+        font-weight: 400;
+        font-size: 2rem;
+        color: #313131;
+    }
+
+    .footer-subtitle{
+        font-weight: 400;
+        opacity: 60%;
+    }
+
+    .widget{
+        .wc-text{
+            font-weight: 400;
+            font-size: 20px;
+        }
+
+        .footer-social{
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+
+            li{
+                a{
+                    display: block;
+                    background-color: #EEEEEE;
+                    padding: .5rem .8rem;
+                    color: #000;
+                    border-radius: 10px;
+                    border: 2px solid transparent;
+
+                    &:hover{
+                        &.behance{
+                            border-color: #1664F2;  
+                            color: #1664F2;  
+                        }
+                        &.dribbble{
+                            border-color: #DE4882;
+                            color: #DE4882;
+                        }
+                        &.linkedin{
+                            border-color: #026EAA;
+                            color: #026EAA;
+                        }
+                        &.facebook{
+                            border-color: #3F62A9;
+                            color: #3F62A9;
+                        }
+                        &.instagram{
+                            border-color: #BC2584;
+                            color: #BC2584;
+                        }
+                        &.twitter{
+                            border-color: #1C99E6;
+                            color: #1C99E6;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .copyright{
+        font-size: .85rem;
+        color: #313131;
+        margin-top: 3rem;
+    }
+}
