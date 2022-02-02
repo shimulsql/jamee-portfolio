@@ -2,12 +2,17 @@
 
 .section{
     padding: 80px 0 0 0;
-
+    @include media-breakpoint-down(xs){
+        padding: 40px 0 0 0;
+    }
     .section-title{
         margin-bottom: 20px;
         font-weight: 400;
         font-size: 2rem;
         color: #313131;
+        @include media-breakpoint-down(xs){
+            font-size: 1.3rem;
+        }
     }
 
     .section-subtitle{

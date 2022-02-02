@@ -10,7 +10,7 @@
                 This is a Website <span>I made it for you</span>
             </p>
             <h1 class="banner__title">
-                Hi I'm Al Jamee
+                <span class="banner-typing"></span>
             </h1>
             <p class="banner__subtitle">
                 Graphic designer with 13 years of experience Branding and Print design efforts to create delightful & impactful Designs.
@@ -30,7 +30,9 @@
                 <% fcards.forEach(function(card){ %> 
                     <div class="col-md-6">
                         <div class="card">
-                            <img src="<%= card.image %>" class="card-img-top" alt="<%= card.title %>">
+                            <div class="card-img">
+                                <img src="<%= card.image %>" class="card-img-top" alt="<%= card.title %>">
+                            </div>
                             <div class="card-body">
                                 <span class="label"><%= card.label %></span>
                                 <h5 class="card-title"><%= card.title %></h5>
@@ -54,7 +56,7 @@
             </h3>
             <div class="row">
                 <% services.forEach(function(service){ %>
-                    <div class="col-md-6 card-col">
+                    <div class="col-md-6 col-sm-6 col-xs-12 card-col">
                         <div class="card">
                             <div class="card-body">
                                 <h3 class="card-title">

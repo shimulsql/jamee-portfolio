@@ -1,12 +1,19 @@
 footer{
     margin-top: 80px;
     padding: 80px 0;
+    @include media-breakpoint-down(xs){
+        margin-top: 40px;
+        padding: 40px 0;
+    }
 
     .footer-title{
         margin-bottom: 20px;
         font-weight: 400;
         font-size: 2rem;
         color: #313131;
+        @include media-breakpoint-down(xs){
+            font-size: 1.3rem;
+        }
     }
 
     .footer-subtitle{
