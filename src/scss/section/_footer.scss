@@ -13,12 +13,17 @@ footer{
         color: #313131;
         @include media-breakpoint-down(xs){
             font-size: 1.3rem;
+            margin-bottom: 5px;
         }
     }
 
     .footer-subtitle{
         font-weight: 400;
         opacity: 60%;
+
+        @include media-breakpoint-down(xs){
+            font-size: .85rem;
+        }
     }
 
     .widget{
@@ -31,6 +36,9 @@ footer{
             list-style: none;
             display: flex;
             justify-content: space-between;
+            @include media-breakpoint-down(md){
+                margin-top: 2rem;
+            }
 
             li{
                 a{
