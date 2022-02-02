@@ -7842,6 +7842,7 @@ textarea.form-control-lg {
     font-weight: 500;
     background: linear-gradient(to right, #7000FF, #FF4646);
     background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     width: fit-content;
     margin-bottom: 0; }
@@ -7938,24 +7939,58 @@ textarea.form-control-lg {
       color: #7B8288;
       text-decoration: none; }
 
-.services-wrap .card-col:nth-child(1) .card::before {
+.services-wrap .card-col:nth-child(1) .card .card-body::before {
   background-color: #FF5353; }
+
+.services-wrap .card-col:nth-child(1) .card::before {
+  background: linear-gradient(to right, #7835ca00, #FF5353) !important; }
+
+.services-wrap .card-col:nth-child(2) .card::before {
+  background: linear-gradient(to right, #7835ca00, #888888) !important; }
 
 .services-wrap .card {
   border: none;
   border-radius: 16px;
   position: relative;
+  z-index: 1;
+  overflow: hidden;
   margin-bottom: 1rem; }
-  .services-wrap .card::before {
+  .services-wrap .card::after, .services-wrap .card::before {
     position: absolute;
-    content: '';
-    width: 2px;
-    background-color: #888888;
-    left: 0;
-    top: 10%;
-    height: 84%; }
+    content: ''; }
+  .services-wrap .card::before {
+    width: 150px;
+    height: 100%;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%) rotate(-90deg);
+    transform-origin: bottom center;
+    z-index: 9; }
+
+@keyframes rotate {
+  0% {
+    transform: translateX(-50%) rotate(-90deg); }
+  100% {
+    transform: translateX(-50%) rotate(270deg); } }
+  .services-wrap .card:hover::before {
+    animation: rotate linear 3s; }
+  .services-wrap .card::after {
+    background-color: #ffffff;
+    inset: 2px;
+    border-radius: 16px;
+    z-index: 99; }
   .services-wrap .card .card-body {
-    padding: 1.5rem 1rem; }
+    padding: 1.5rem 1rem;
+    position: relative;
+    z-index: 999; }
+    .services-wrap .card .card-body::before {
+      position: absolute;
+      content: '';
+      width: 2px;
+      background-color: #888888;
+      left: 0;
+      top: 10%;
+      height: 84%; }
   .services-wrap .card .card-title {
     font-size: 1.45rem;
     font-weight: 400;
