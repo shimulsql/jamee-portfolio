@@ -8031,10 +8031,12 @@ footer {
     font-weight: 400;
     font-size: 2rem;
     color: #313131;
-    font-size: 1.3rem; }
+    font-size: 1.3rem;
+    margin-bottom: 5px; }
   footer .footer-subtitle {
     font-weight: 400;
-    opacity: 60%; }
+    opacity: 60%;
+    font-size: .85rem; }
   footer .widget .wc-text {
     font-weight: 400;
     font-size: 20px; }
@@ -8042,6 +8044,9 @@ footer {
     list-style: none;
     display: flex;
     justify-content: space-between; }
+    @media (max-width: 767.98px) {
+      footer .widget .footer-social {
+        margin-top: 2rem; } }
     footer .widget .footer-social li a {
       display: block;
       background-color: #EEEEEE;
